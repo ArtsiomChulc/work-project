@@ -1,0 +1,104 @@
+/*BUTTON*/
+.btn {
+    text-align: center;
+    padding: 15px 22px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+
+    > span {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(-10px, -50%);
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
+}
+
+.btn_small {
+    width: 15%;
+}
+
+.btn_medium {
+    width: 45%;
+}
+
+.btn_large {
+    width: 100%;
+}
+
+.btn_primary {
+    background-color: #007bff;
+}
+
+.btn_secondary {
+    background-color: #5a5f63;
+}
+
+/*LINK*/
+.link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link_wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    cursor: pointer;
+    pointer-events: bounding-box;
+    padding: 10px 15px;
+
+    .link_small ~ span > svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .link_medium ~ span > svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .link_large ~ span > svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    > span {
+        display: flex;
+        align-items: center;
+    }
+
+    .link_primary ~ span {
+        color: #3a5ce4;
+    }
+
+    .link_secondary ~ span {
+        color: #313940;
+    }
+}
+
+.link_small {
+    font-size: 14px;
+}
+
+.link_medium {
+    font-size: 18px;
+}
+
+.link_large {
+    font-size: 24px;
+}
+
+.link_primary {
+    color: #3a5ce4;
+}
+
+.link_secondary {
+    color: #313940;
+}
